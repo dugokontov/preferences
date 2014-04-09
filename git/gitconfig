@@ -1,0 +1,9 @@
+[push]
+	default = simple
+[alias]
+
+  logn = log ORIG_HEAD.. --stat --no-merges
+
+  logs = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+  refresh = !BRANCH=$(git symbolic-ref --short HEAD) && git checkout $BRANCH && git stash && git pull --rebase origin $BRANCH && git stash apply && git stash drop

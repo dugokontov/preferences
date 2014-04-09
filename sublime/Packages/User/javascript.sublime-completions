@@ -1,0 +1,25 @@
+{
+"scope": "source.js -string -comment -constant",
+
+"completions":
+[
+        { "trigger": "while", "contents": "while (${1:condition}${1/(t$)|(f$)|.*/?1:rue:?2:alse/}) {\n\t$0\n}" },
+        { "trigger": "forin", "contents": "for (var ${1:index} in ${2:array}) {\n\tif (${2:array}.hasOwnProperty(${1:index})) {\n\t\t$0\n\t}\n}" },
+        { "trigger": "cl", "contents": "console.log($0);" },
+        { "trigger": "ce", "contents": "console.error(${1:err});\n$0" },
+        { "trigger": "f", "contents": "function (${1:arg}) {\n\t$0\n}" },
+        { "trigger": "fc", "contents": "function (${1:arg}) {\n\t$0\n};" },
+        { "trigger": "fcc", "contents": "(function (${1:arg}) {\n\t$0\n}(${1}));" },
+        { "trigger": "if", "contents": "if (${1:arg}) {\n\t$0\n}" },
+        { "trigger": "ife", "contents": "if (${1:arg}) {\n\t$0\n} else {\n\t\n}" },
+        { "trigger": "ei", "contents": "else if (${1:arg}) {\n\t$0\n}" },
+        { "trigger": "else", "contents": "else {\n\t$0\n}" },
+        { "trigger": "switch", "contents": "switch (${1:condition}) {\ncase ${2:value}:\n\t$0\n\tbreak;\n}" },
+        { "trigger": "case", "contents": "case ${2:case}:\n\t$0\n\tbreak;" },
+        { "trigger": "ajax()\t$", "contents": "ajax({\n\turl: ${1:url},\n\ttype: '${2:POST}${2/(P$)|(G$)|(D$)|.*/?1:OST:?2:ET:?3:ELETE/}',\n\tdataType: '${3:xml/json/jsonp/script/html/text}${3/(x$)|(j$)|(s$)|(h$)|(js$)|(t$)|.*/?1:ml:?2:son:?3:cript:?4:tml:?5:onp:?6:ext/}'\n});" },
+        { "trigger": "$.each", "contents": "\\$.each(${1:array}, function (${2:index}, ${3:element}) {\n\t$0\n});" },
+        { "trigger": "$.map", "contents": "\\$.map(${1:array}, function (${2:element}, ${3:index}) {\n\t$0\n});" },
+        { "trigger": "define", "contents": "define(\n\t[${1:'ko'}],\n\tfunction (${2:ko}) {\n\t\t'use strict';\n\t\t$0\n\t}\n);" },
+        { "trigger": "computed", "contents": "ko.computed(function () {\n\t$0\n}, this);" }
+]
+}
