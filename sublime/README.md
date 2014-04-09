@@ -1,4 +1,5 @@
-== Sublime
+Sublime
+-------
 
 Config files for sublime. Copy Packages folder in
 
