@@ -1,5 +1,6 @@
 {
 	"bold_folder_labels": true,
+	"translate_tabs_to_spaces": true,
 	"caret_style": "phase",
 	"fade_fold_buttons": false,
 	"folder_exclude_patterns":
