@@ -6,7 +6,7 @@
         { "trigger": "while", "contents": "while (${1:condition}${1/(t$)|(f$)|.*/?1:rue:?2:alse/}) {\n\t$0\n}" },
         { "trigger": "forin", "contents": "for (var ${1:index} in ${2:array}) {\n\tif (${2:array}.hasOwnProperty(${1:index})) {\n\t\t$0\n\t}\n}" },
         { "trigger": "cl", "contents": "console.log($0);" },
-        { "trigger": "ce", "contents": "console.error(${1:err});\n$0" },
+        { "trigger": "ce", "contents": "console.error(${1:err});$0" },
         { "trigger": "f", "contents": "function (${1:arg}) {\n\t$0\n}" },
         { "trigger": "fc", "contents": "function (${1:arg}) {\n\t$0\n};" },
         { "trigger": "fcc", "contents": "(function (${1:arg}) {\n\t$0\n}(${1}));" },
