@@ -15,9 +15,6 @@
         { "trigger": "ei", "contents": "else if (${1:arg}) {\n\t$0\n}" },
         { "trigger": "else", "contents": "else {\n\t$0\n}" },
         { "trigger": "switch", "contents": "switch (${1:condition}) {\ncase ${2:value}:\n\t$0\n\tbreak;\n}" },
-        { "trigger": "case", "contents": "case ${2:case}:\n\t$0\n\tbreak;" },
-        { "trigger": "ajax()\t$", "contents": "ajax({\n\turl: ${1:url},\n\ttype: '${2:POST}${2/(P$)|(G$)|(D$)|.*/?1:OST:?2:ET:?3:ELETE/}',\n\tdataType: '${3:xml/json/jsonp/script/html/text}${3/(x$)|(j$)|(s$)|(h$)|(js$)|(t$)|.*/?1:ml:?2:son:?3:cript:?4:tml:?5:onp:?6:ext/}'\n});" },
-        { "trigger": "$.each", "contents": "\\$.each(${1:array}, function (${2:index}, ${3:element}) {\n\t$0\n});" },
-        { "trigger": "$.map", "contents": "\\$.map(${1:array}, function (${2:element}, ${3:index}) {\n\t$0\n});" }
+        { "trigger": "case", "contents": "case ${2:case}:\n\t$0\n\tbreak;" }
 ]
 }
