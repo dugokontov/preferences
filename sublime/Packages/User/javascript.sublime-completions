@@ -15,6 +15,9 @@
         { "trigger": "ei", "contents": "else if (${1:arg}) {\n\t$0\n}" },
         { "trigger": "else", "contents": "else {\n\t$0\n}" },
         { "trigger": "switch", "contents": "switch (${1:condition}) {\ncase ${2:value}:\n\t$0\n\tbreak;\n}" },
-        { "trigger": "case", "contents": "case ${2:case}:\n\t$0\n\tbreak;" }
+        { "trigger": "case", "contents": "case ${2:case}:\n\t$0\n\tbreak;" },
+        { "trigger": "map", "contents": "map(function (${1:element}) {\n\t$0\n})" },
+        { "trigger": "reduce", "contents": "reduce(function (${2:old}, ${3:new}) {\n\t$0\n}, ${1:initValue})" },
+        { "trigger": "forEach", "contents": "forEach(function (${1:element}, ${2:index}) {\n\t$0\n})" }
 ]
 }
