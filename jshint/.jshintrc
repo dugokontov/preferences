@@ -2,6 +2,7 @@
   "camelcase": true,
   "curly": true,
   "eqeqeq": true,
+  "es3": true,
   "forin": true,
   "freeze": true,
   "immed": true,
@@ -10,12 +11,12 @@
   "noempty": true,
   "nomen": true,
   "onevar": true,
-  "quotmark": "double",
+  "quotmark": true,
   "strict": true,
+  "trailing": true,
   "undef": true,
   "unused": true,
-  "trailing": true,
   "white": true,
-  "es3": true,
+  "devel": true,
   "predef": []
 }
