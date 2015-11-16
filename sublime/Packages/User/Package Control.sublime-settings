@@ -1,0 +1,23 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"CSS Extended Completions",
+		"DocBlockr",
+		"Emmet",
+		"Javascript Beautify",
+		"JSHint Gutter",
+		"JSX",
+		"LESS",
+		"Package Control",
+		"Reform",
+		"SideBarEnhancements",
+		"SublimeGit",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint"
+	]
+}
