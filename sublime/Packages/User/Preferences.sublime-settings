@@ -1,25 +1,37 @@
 {
 	"bold_folder_labels": true,
-	"translate_tabs_to_spaces": true,
 	"caret_style": "phase",
 	"fade_fold_buttons": false,
 	"folder_exclude_patterns":
 	[
-		".svn",
 		".git",
-		".hg",
 		"CVS",
 		".target",
-		"scala-2.10"
+		"bin",
+		"build",
+		"vendor",
+		"website",
+		"bower_components",
+		"node_modules",
+		"demo",
+		".idea"
 	],
-	"font_size": 10,
+	"font_size": 12,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"tab_size": 2,
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"rulers":
+	[
+		80
+	],
+	"spell_check": true,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"vintage_start_in_command_mode": true
 }
