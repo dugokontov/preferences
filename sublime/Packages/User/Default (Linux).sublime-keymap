@@ -1,3 +1,24 @@
 [
-	{ "keys": ["ctrl+k", "ctrl+m"], "command": "toggle_minimap" }
+    { "keys": ["ctrl+i"], "command": "if_parent_exist" },
+    { "keys": ["ctrl+b"], "command": "goto_definition" },
+    { "keys": ["ctrl+k", "ctrl+m"], "command": "toggle_minimap" },
+    { "keys": ["ctrl+shift+r"], "command": "reindent" , "args": { "single_line": false } },
+    {
+        "keys": ["tab"],
+        "command": "expand_abbreviation_by_tab", 
+        "context": [
+            {
+                "operand": "source.js", 
+                "operator": "equal", 
+                "match_all": true, 
+                "key": "selector"
+            },
+            {   
+                "key": "selection_empty", 
+                "operator": "equal", 
+                "operand": true,
+                "match_all": true 
+            }
+        ]
+    }
 ]
