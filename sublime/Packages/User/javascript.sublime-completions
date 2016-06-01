@@ -19,6 +19,7 @@
         { "trigger": "strict", "contents": "'use strict';\n$0" },
         { "trigger": "map", "contents": "map(function (${1:element}) {\n\t$0\n})" },
         { "trigger": "reduce", "contents": "reduce(function (${2:old}, ${3:new}) {\n\t$0\n}, ${1:initValue})" },
-        { "trigger": "forEach", "contents": "forEach(function (${1:element}, ${2:index}) {\n\t$0\n})" }
+        { "trigger": "forEach", "contents": "forEach(function (${1:element}, ${2:index}) {\n\t$0\n})" },
+        { "trigger": "getset", "contents": "set ${1:property}(${1:property}) {\n\tthis._${1:property} = ${1:property};\n}\n\nget ${1:property}() {\n\treturn this._${1:property};\n}" }
 ]
 }
