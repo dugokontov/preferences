@@ -7,3 +7,9 @@
   logs = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 
   refresh = !BRANCH=$(git symbolic-ref --short HEAD) && git checkout $BRANCH && git stash && git pull --rebase origin $BRANCH && git stash apply && git stash drop
+
+  c = checkout
+  po = pull origin
+  ps = push origin
+
+  cleanbranches = !BRANCH=$(git symbolic-ref --short HEAD) && git branch | grep -v $BRANCH | grep -v master | grep -v development | xargs -n 1 git branch -d
