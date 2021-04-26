@@ -130,7 +130,6 @@ bindsym $mod+x move workspace to output right
 assign [class="jetbrains-rubymine"] $workspace5
 assign [class="jetbrains-idea"] $workspace6
 assign [class="ViberPC"] $workspace10
-assign [class="Slack"] $workspace10
 
 # reload the configuration file
 # bindsym $mod+Shift+c reload
@@ -175,7 +174,6 @@ bar {
 bindsym $mod+Ctrl+m exec /home/dugokontov/.nvm/versions/node/v6.10.0/bin/node ~/scripts/change_resolution/change_resolution.js
 
 exec /opt/viber/Viber
-exec /usr/bin/slack
 
 bindsym $mod+Shift+m exec rubymine.sh
 bindsym $mod+Shift+i exec idea.sh
